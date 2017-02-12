@@ -1,0 +1,65 @@
+// Insert your styling here.
+/* header ******************************/
+/* ----- header region --------------- */
+.header{ 
+	margin:5px 0 5px;
+}
+
+.header-section {
+	display: table;
+}
+
+.header-content{ 
+	clear:both;
+}
+
+/* ----- search box ------------------ */
+.nav-search { float:right; margin:-65px -20px 0 0; padding:0; min-height:1px; }
+.nav-search .search-form, #header-search .search-form { margin:0; padding:0; }
+.nav-search .form-item, #header-search .form-item { margin:0; }
+/* ----- logo ------------------------ */
+.header .site-logo { display:table-cell; vertical-align:middle; }
+.header .site-logo img { max-height:120px; max-width: none;}
+/* ----- site title and slogan ------- */
+.site-name, #site-slogan { color:@gray-base; font-family:inherit; line-height:1; text-rendering:optimizelegibility; }
+.site-name { font-weight:700; font-size:36px; }
+#site-slogan { margin-top:.3em; font-size:24px; line-height:1.1em; }
+.site-name a, .site-name a:hover { color:@gray-base; text-decoration:none; }
+.site-name a:hover { color:#000; }
+#name-and-slogan { display:table-cell; padding:20px 0 20px 10px; vertical-align:middle; width: 100%;}
+.site-login {text-align: right;}
+/* navigation ************************ */
+/* ----- main navigation ------------- */
+.site-main-menu { clear:both; }
+.site-main-menu ul li, .site-main-menu ul li.leaf, .site-main-menu ul li.expanded, .site-main-menu ul li.collapsed { list-style:none; list-style-image:none; }
+.site-main-menu ul.menu { margin:0; }
+.site-main-menu ul.menu li { margin:0; padding:0; }
+nav h2 { position:absolute; left:-10000px; }
+/* ----- admin shortcuts / secondary menu -------- */
+.admin-shortcuts { display:block; background:#eee; font-size:12px; }
+.admin-shortcuts ul.menu li, .admin-shortcuts ul.menu li.leaf, .admin-shortcuts ul.menu li.expanded, .admin-shortcuts ul.menu li.collapsed { list-style:none; list-style-image:none; }
+.admin-shortcuts ul.menu { margin:0; }
+.admin-shortcuts ul.menu li { display:inline-block; position: relative; }
+.admin-shortcuts ul.menu li li { display:block; }
+.admin-shortcuts ul.menu li a { background:none; }
+.admin-shortcuts ul.menu li ul { display: none; }
+.admin-shortcuts ul.menu li:hover > ul { display: block; background: #fff; border: 1px solid #D4D4D4;  position: absolute; width: 200px; }
+.admin-shortcuts ul.menu li li:hover > ul { position: absolute; top: 5px; left: 190px; }
+/* navigation ************************ */
+/* ----- main navigation ------------- */
+.site-main-menu { clear:both; }
+.site-main-menu ul li, .site-main-menu ul li.leaf, .site-main-menu ul li.expanded, .site-main-menu ul li.collapsed { list-style:none; list-style-image:none; }
+.site-main-menu ul.menu { margin:0; }
+.site-main-menu ul.menu li { margin:0; padding:0;}
+.btn.btn-navbar { float:left; margin-bottom:8px; }
+nav ul li a { display:block; }
+.navbar-inner { padding:5px 5px 0; }
+@media (max-width: 480px) {
+.content-col2 [class*="span"] { margin-left:0; width:100%; }
+.header #logo { display:block; margin:0; text-align:center; }
+.header-section {display: block;}
+.site-name, .site-slogan, .site-login { text-align:center; }
+#name-and-slogan {display: block;}
+}
+
+

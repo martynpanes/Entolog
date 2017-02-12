@@ -1,0 +1,99 @@
+3 January 2015 (oadaeh)
+--------------
+Accounted for reports with zero records, so they do not display errors.
+Completed the "Used not referenced" report.
+
+31 December 2014 (oadaeh)
+----------------
+Added a record limiter to all reports, so that reports that retrieve a large
+amount of data can be made quicker.
+Completed the "Referenced not used" report, except for searching body fields
+for file references.
+
+28 December 2014 (oadaeh)
+----------------
+Nearly completed the "Referenced not used" report (needs some more testing).
+
+?? December 2014 (oadaeh)
+----------------
+Created two new reports: "Used not referenced" & "Referenced not used."
+
+1 December 2014 (oadaeh)
+---------------
+For the four working reports:
+ * Broke out the data collection to a separate function.
+ * Fixed/added paging.
+
+30 November 2014 (oadaeh)
+----------------
+Created two new reports: "Managed but not used" and "Used but not managed."
+Pulled the HTML tags out of the various descriptive texts in hook_help() (except
+for the References and Unreferenced reports, as they still need re-factoring).
+Changed the IDs for the permissions.
+Updated README.txt with the two new reports and new structure (more needs to be
+done, especially with updating content).
+Updated INSTALL.txt to actually contain some useful information.
+
+28 November 2014 (oadaeh)
+----------------
+Re-factored the Not on server and Not in database reports to be more in
+conformance with Drupal API and best practices.
+Added admin settings for the reports pages.
+Continued with the update of the documentation.
+
+14 September 2014 (oadaeh)
+-----------------
+Got the Not on server report working correctly.
+Added an action to Not on server report to remove items from database.
+Renamed auditfiles.notindb.inc to auditfiles.notindatabase.inc.
+
+13 September 2014 (oadaeh)
+-----------------
+Got the Not in database report working correctly.
+
+6 August 2014 (oadaeh)
+-------------
+Update code to conform to Drupal Coding Standards, as identified by the Coder
+module.
+Also, renamed the include files to follow a auditfiles.$function.inc naming
+standard.
+
+22 July 2014
+-------------
+Committed initial port of Audit Files to Drupal 7.
+The work was done by javier.alejandro.castro, mrfelton, TommyK in this issue:
+https://www.drupal.org/node/1016600
+
+4 September 2008 (mikeryan)
+----------------
+Implemented Missing References and Unreferenced reports.
+Added Attach actions to Not In Database report.
+
+30 October 2007
+---------------
+Module updated for Drupal 6.
+  - reports separated out in to separate include files
+  - admin page separated out in to separate include file
+  - files not on server table made sortable
+  - reports now appear directly under Administer > Logs as grouping has been
+    removed from the new Drupal 6 menu system.
+
+27 October 2007
+---------------
+#183798 - makes exclusions user configurable - exclusions can be set for files,
+paths or extensions
+
+26 October 2007
+---------------
+#183730 - add an "edit" link for files not on the server.
+#183725 - provide count of files found in each category when report is viewed.
+#186139 - make links to files not in the database clickable
+
+11 April 2007
+-------------
+More helpful if the Files not on server report lists sorted by filename, not
+nid. Easier to use the report if you want to compare with an FTP listing etc
+
+10 April 2007
+-------------
+First version for Drupal 5

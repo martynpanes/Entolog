@@ -1,0 +1,11 @@
+name = Audit Files
+description = Performs an audit of the files directory and the file_managed and file_usage database tables.
+core = 7.x
+configure = admin/config/system/auditfiles
+
+; Information added by Drupal.org packaging script on 2015-01-06
+version = "7.x-3.0-alpha2"
+core = "7.x"
+project = "auditfiles"
+datestamp = "1420510685"
+

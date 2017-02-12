@@ -1,0 +1,14 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the auditfiles module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function auditfiles_uninstall() {
+  db_delete('variable')
+    ->condition('name', 'auditfiles_%', 'LIKE')
+    ->execute();
+}

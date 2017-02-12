@@ -1,0 +1,7 @@
+name = Instrument Catalogue Advanced View Mode
+description = "Switch display suite view mode in instrument catalogue views row based on entity field value"
+core = 7.x
+package = "Display Suite"
+dependencies[] = ds
+
+

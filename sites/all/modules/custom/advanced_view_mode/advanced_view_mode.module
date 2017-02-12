@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Advanced View Mode Functions.
+ */
+
+/*
+ * Display Suite views build mode for events
+ */
+function ds_views_row_adv_instrument_catalogue($entity, $view_mode, $load_comments) {
+
+  if (empty($entity->field_full_details_only)) {
+    $node_display = node_view($entity, 'teaser');
+  }
+  else {
+    $node_display = node_view($entity, 'instrument_no_options');
+  }
+  
+  if ($load_comments) {
+    $node_display['comments'] = comment_node_page_additions($entity);
+  }
+  return drupal_render($node_display);
+}
+function ds_views_row_adv_for_sale($entity, $view_mode, $load_comments) {
+
+ if (empty($entity->field_mark_as_sold)) {
+  $node_display = node_view($entity, 'teaser');
+ }
+ else {
+  $node_display = node_view($entity, 'instrument_no_options');
+ }
+
+ if ($load_comments) {
+  $node_display['comments'] = comment_node_page_additions($entity);
+ }
+ return drupal_render($node_display);
+}
