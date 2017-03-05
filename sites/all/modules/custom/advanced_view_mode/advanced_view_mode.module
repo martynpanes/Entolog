@@ -40,6 +40,7 @@ function this_tests_git_commits(){
 drupal_set_message('Message');
 }
 }
+//This is a line
 function this_tests_git_commits_2(){
 drupal_set_message('message2');
 }
