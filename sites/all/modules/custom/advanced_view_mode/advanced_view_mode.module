@@ -36,3 +36,11 @@ function ds_views_row_adv_for_sale($entity, $view_mode, $load_comments) {
  }
  return drupal_render($node_display);
 }
+function this_tests_git_commits(){
+drupal_set_message('Message');
+}
+}
+//This is a line
+function this_tests_git_commits_2(){
+drupal_set_message('message2');
+}
